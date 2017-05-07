@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
   // background-position: center;
   // background-image: linear-gradient(135deg, rgba(0, 90, 50, 0.3) 40%, rgba(0,0,0,0.3) 60%),
   // url('http://res.cloudinary.com/dmbf29/image/upload/v1492588671/shibuya_mqo0go.jpg');
@@ -27,4 +29,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+
+.home-card-picture {
+  // max-height: 500px;
+  max-width: 100%;
 }
