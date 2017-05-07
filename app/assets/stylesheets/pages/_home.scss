@@ -1,3 +1,12 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: $gray;
+}
+
 .banner {
   text-align: center;
   height:50vh;
@@ -33,6 +42,81 @@
 
 
 .home-card-picture {
-  // max-height: 500px;
   max-width: 100%;
 }
+
+.projects-wrapper {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height:100px;
+  background-color: $red;
+  margin-top: 0px;
+}
+
+.projects-wrapper h2 {
+  margin: 0px;
+}
+
+.gibbit-background {
+  background-color: $seafoam;
+}
+.studio-background {
+  background-color: $sky;
+}
+.skill-background {
+  background-color: $yellow;
+}
+
+.project-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.skill-card {
+  text-align: left;
+  padding: 20px;
+}
+
+.project-card h3 {
+  font-size: 30px;
+  margin: 0px;
+}
+
+.project-card h4 {
+  font-size: 24px;
+}
+.card-content {
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-weight: lighter;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.card-content p {
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -43,16 +43,86 @@
 </div>
 
 <div class="row no-gutters">
-  <div class="col-xs-12 col-sm-6 no-gutters">
-    <%= cl_image_tag("dougmain_e0m4ha.jpg", :height=>960, :width=>945, :crop=>"scale", class: "home-card-picture") %>
+  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
+    <%= cl_image_tag("dougmain_mzovpj.jpg", class: "home-card-picture") %>
   </div>
-  <div class="col-xs-12 col-sm-6 no-gutters">
-    <%= cl_image_tag("v1493804207/dougdmm_vo7yry.jpg", class: "home-card-picture") %>
+  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
+    <%= cl_image_tag("dougdmm_gdxjru.jpg", class: "home-card-picture") %>
   </div>
-    <div class="col-xs-12 col-sm-6 no-gutters">
-    <%= cl_image_tag("v1493804207/dougdmm_vo7yry.jpg", class: "home-card-picture") %>
+</div>
+
+<div class="projects-wrapper">
+  <h2>Projects</h2>
+</div>
+<div class="row no-gutters gibbit-background">
+  <div class="card-background">
+    <div class="col-xs-12 col-sm-6" style="padding: 0px;">
+      <%= link_to "http://www.gibbit.online", target: "_blank" do %>
+      <div class="project-card">
+        <h3>Gibbit</h3>
+        <h4>Lead developer for an online service that helps foreigners living abroad</h4>
+        <div class="card-content">
+          <p><strong>
+            We created a two-sided service where users could sign-in and live chat with one of the admins for assistance.</strong></p>
+            <p> I was personally responsible with the design and functionality of the user and admin dashboards. I was also in charge of the UX and layout of the home page and chatroom, along with implementing Stripe to pay for service.
+          </p>
+        </div>
+      </div>
+      <% end %>
+    </div>
   </div>
-    <div class="col-xs-12 col-sm-6 no-gutters">
-    <%= cl_image_tag("dougmain_e0m4ha.jpg", :height=>960, :width=>945, :crop=>"scale", class: "home-card-picture") %>
+  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
+    <%= link_to "http://www.gibbit.online", target: "_blank" do %>
+      <%= cl_image_tag("gibbithomepage_o7vyv3.png", class: "home-card-picture") %>
+    <% end %>
+  </div>
+</div>
+<div class="row no-gutters studio-background">
+  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
+    <%= link_to "https://studio-fifty-find.herokuapp.com/", target: "_blank" do %>
+      <%= cl_image_tag("studoindexpage_vstefa.png", class: "home-card-picture") %>
+    <% end %>
+  </div>
+  <div class="card-background">
+    <div class="col-xs-12 col-sm-6" style="padding: 0px;">
+      <%= link_to "https://studio-fifty-find.herokuapp.com/", target: "_blank" do %>
+      <div class="project-card">
+        <h3>Studio Fifty-Find</h3>
+        <h4>Co-developer for a music studio booking service in Tokyo</h4>
+        <div class="card-content">
+          <p><strong>
+            This was a one week project sprint to create a market-place.</strong> </p>
+          <p> I created the back-end CRUD methods to book studios and designed the studio booking pages. I also implemented the Google Maps Geocoding API along with mailer confirmations.
+          </p>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="projects-wrapper">
+  <h2>Skills</h2>
+</div>
+<div class="row no-gutters skill-background">
+  <div class="card-background">
+    <div class="col-xs-12 col-sm-6" style="padding: 0px;">
+      <div class="skill-card">
+        <ul>
+          <li><p>Object-Oriented Programming</p></li>
+          <li><p>Web Design</p></li>
+          <li><p>Online Transactions</p></li>
+          <li><p>UX & UI Design</p></li>
+          <li><p>Cross-Browser Capability</p></li>
+          <li><p>Hosting & Maintenance</p></li>
+          <li><p>Site Troubleshooting</p></li>
+          <li><p>Database Schema</p></li>
+          <li><p>Mockup Building</p></li>
+          <li><p>APIs and Scraping</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
+      <%= cl_image_tag("gibbitpitch_nvtzoq.jpg", class: "home-card-picture") %>
   </div>
 </div>
