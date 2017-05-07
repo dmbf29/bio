@@ -1,3 +1,12 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: $gray;
+}
+
 .banner {
   text-align: center;
   height:50vh;
@@ -5,7 +14,10 @@
   // padding:30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
   // background-position: center;
   // background-image: linear-gradient(135deg, rgba(0, 90, 50, 0.3) 40%, rgba(0,0,0,0.3) 60%),
   // url('http://res.cloudinary.com/dmbf29/image/upload/v1492588671/shibuya_mqo0go.jpg');
@@ -28,3 +40,84 @@
   justify-content: space-around;
   align-items: center;
 }
+
+
+.home-card-picture {
+  max-width: 100%;
+}
+
+.projects-wrapper {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height:100px;
+  background-color: $red;
+  margin-top: 0px;
+}
+
+.projects-wrapper h2 {
+  margin: 0px;
+}
+
+.gibbit-background {
+  background-color: $seafoam;
+}
+.studio-background {
+  background-color: $sky;
+}
+.skill-background {
+  background-color: $yellow;
+}
+
+.project-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.skill-card {
+  text-align: left;
+  padding: 20px;
+}
+
+.project-card h3 {
+  font-size: 30px;
+  margin: 0px;
+}
+
+.project-card h4 {
+  font-size: 24px;
+}
+.card-content {
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-weight: lighter;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.card-content p {
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
