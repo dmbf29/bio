@@ -8,36 +8,44 @@
   </div>
   <div class="banner-icons">
     <div class="banner-icon">
-      <div class="banner-icon-pic">
-        <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
-      </div>
-      <div class="banner-icon-tile">
-        <h5>Email</h5>
-      </div>
+      <%= mail_to "douglasmberkley@gmail.com" do %>
+        <div class="banner-icon-pic">
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+        </div>
+        <div class="banner-icon-tile">
+          <h5>Email</h5>
+        </div>
+      <% end %>
     </div>
     <div class="banner-icon">
       <div class="banner-icon-pic">
-        <p><i class="fa fa-file-text-o" aria-hidden="true"></i></p>
-      </div>
-      <div class="banner-icon-tile">
-        <h5>Resume</h5>
-      </div>
+        <%= link_to "http://res.cloudinary.com/dmbf29/image/upload/v1494349085/Douglas_Berkley_Resume_zkjyn2.png", target: "_blank" do %>
+          <p><i class="fa fa-file-text-o" aria-hidden="true"></i></p>
+        </div>
+        <div class="banner-icon-tile">
+          <h5>Resume</h5>
+        </div>
+      <% end %>
     </div>
     <div class="banner-icon">
-      <div class="banner-icon-pic">
-        <p><i class="fa fa-linkedin" aria-hidden="true"></i></p>
-      </div>
-      <div class="banner-icon-tile">
-        <h5>LinkedIn</h5>
-      </div>
+      <%= link_to "https://www.linkedin.com/in/dougberkley/", target: "_blank" do %>
+        <div class="banner-icon-pic">
+          <p><i class="fa fa-linkedin" aria-hidden="true"></i></p>
+        </div>
+        <div class="banner-icon-tile">
+          <h5>LinkedIn</h5>
+        </div>
+      <% end %>
     </div>
     <div class="banner-icon">
-      <div class="banner-icon-pic">
-        <p><i class="fa fa-github" aria-hidden="true"></i></p>
-      </div>
-      <div class="banner-icon-tile">
-        <h5>Github</h5>
-      </div>
+      <%= link_to "https://github.com/dmbf29", target: "_blank" do %>
+        <div class="banner-icon-pic">
+          <p><i class="fa fa-github" aria-hidden="true"></i></p>
+        </div>
+        <div class="banner-icon-tile">
+          <h5>Github</h5>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
@@ -52,23 +60,33 @@
 
 <div class="row no-gutters">
   <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-    <%= cl_image_tag("dougmain_mzovpj.jpg", class: "home-card-picture") %>
+<!--     <%= cl_image_tag("dougmain_mzovpj.jpg", class: "home-card-picture") %> -->
+    <div class="picture-impact">
+
+    </div>
   </div>
   <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-    <%= cl_image_tag("dougdmm_gdxjru.jpg", class: "home-card-picture") %>
+<!--     <%= cl_image_tag("dougdmm_gdxjru.jpg", class: "home-card-picture") %> -->
+    <div class="picture-dmm">
+
+    </div>
   </div>
 </div>
 
-<div class="projects-wrapper">
+<div class="projects-title-wrapper">
   <h2>Projects</h2>
 </div>
+
+<!-- Gibbit Info and Pic -->
 <div class="row no-gutters gibbit-background">
   <div class="card-background">
     <div class="col-xs-12 col-sm-6" style="padding: 0px;">
       <%= link_to "http://www.gibbit.online", target: "_blank" do %>
       <div class="project-card">
-        <h3>Gibbit</h3>
-        <h4>Lead developer for an online service that helps foreigners living abroad</h4>
+        <div class="card-title">
+          <h3>Gibbit</h3>
+          <h4>Lead developer for an online service that helps foreigners living abroad</h4>
+        </div>
         <div class="card-content">
           <p><strong>
             We created a two-sided service where users could sign-in and live chat with one of the admins for assistance.</strong></p>
@@ -81,22 +99,26 @@
   </div>
   <div class="col-xs-12 col-sm-6" style="padding: 0px;">
     <%= link_to "http://www.gibbit.online", target: "_blank" do %>
-      <%= cl_image_tag("gibbithomepage_o7vyv3.png", class: "home-card-picture") %>
+      <div class="picture-gibbit"></div>
     <% end %>
   </div>
 </div>
+
+<!-- Studio Fifty-Find and Pic -->
 <div class="row no-gutters studio-background">
   <div class="col-xs-12 col-sm-6" style="padding: 0px;">
     <%= link_to "https://studio-fifty-find.herokuapp.com/", target: "_blank" do %>
-      <%= cl_image_tag("studoindexpage_vstefa.png", class: "home-card-picture") %>
+      <div class="picture-studio"></div>
     <% end %>
   </div>
   <div class="card-background">
     <div class="col-xs-12 col-sm-6" style="padding: 0px;">
       <%= link_to "https://studio-fifty-find.herokuapp.com/", target: "_blank" do %>
       <div class="project-card">
-        <h3>Studio Fifty-Find</h3>
-        <h4>Co-developer for a music studio booking service in Tokyo</h4>
+        <div class="card-title">
+          <h3>Studio Fifty-Find</h3>
+          <h4>Co-developer for a music studio booking service in Tokyo</h4>
+        </div>
         <div class="card-content">
           <p><strong>
             This was a one week project sprint to create a market-place.</strong> </p>
@@ -108,9 +130,26 @@
     </div>
   </div>
 </div>
-<div class="projects-wrapper">
+
+<div class="projects-title-wrapper">
+  <h2>Gibbit Pitch</h2>
+</div>
+
+<!-- Pitch Video and Pic -->
+<div class="row no-gutters title-background">
+  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
+    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/QMDunGmWEAw" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
+    <div class="picture-presentation"></div>
+  </div>
+</div>
+
+
+<div class="projects-title-wrapper">
   <h2>Skills</h2>
 </div>
+<!-- Skills List and Pic -->
 <div class="row no-gutters skill-background">
   <div class="card-background">
     <div class="col-xs-12 col-sm-6" style="padding: 0px;">
@@ -131,6 +170,6 @@
     </div>
   </div>
   <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-      <%= cl_image_tag("gibbitpitch_nvtzoq.jpg", class: "home-card-picture") %>
+    <div class="picture-tokyodev"></div>
   </div>
 </div>
