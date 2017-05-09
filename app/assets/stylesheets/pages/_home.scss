@@ -9,7 +9,7 @@ a:hover {
 
 .banner {
   text-align: center;
-  height:50vh;
+  height:60vh;
   background-color: $teal;
   // padding:30px;
   display: flex;
@@ -27,12 +27,17 @@ a:hover {
 .banner-name h1 {
   font-size: 100px;
   margin-top: 0px;
+  font-family: "Caveat";
   // padding: 50px;
 }
 
 .banner-title {
   font-size: 32px;
-  // margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.banner-title h3 {
+  font-weight: lighter;
 }
 
 .banner-icons {
@@ -41,12 +46,11 @@ a:hover {
   align-items: center;
 }
 
-
-.home-card-picture {
-  max-width: 100%;
+.banner-icons h5 {
+  font-weight: lighter;
 }
 
-.projects-wrapper {
+.projects-title-wrapper {
   text-align: center;
   display: flex;
   align-items: center;
@@ -56,7 +60,7 @@ a:hover {
   margin-top: 0px;
 }
 
-.projects-wrapper h2 {
+.projects-title-wrapper h2 {
   margin: 0px;
 }
 
@@ -69,30 +73,41 @@ a:hover {
 .skill-background {
   background-color: $yellow;
 }
+.title-background {
+  background-color: $red;
+}
 
 .project-card {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
   padding: 20px;
+  height: 500px;
 }
 .skill-card {
   text-align: left;
   padding: 20px;
+  height: 500px;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.project-card h3 {
-  font-size: 30px;
-  margin: 0px;
-}
+//
 
 .project-card h4 {
-  font-size: 24px;
+  font-size: 22px;
+  font-weight: lighter;
+  line-height: 1.2;
 }
 .card-content {
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: 37px;
   font-weight: lighter;
   font-size: 16px;
   padding: 20px;
@@ -103,19 +118,63 @@ a:hover {
 }
 
 
+.picture-impact {
+  padding: 0, 0, 0, 0;
+  background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494139752/dougmain_mzovpj.jpg) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
 
+.picture-dmm {
+  padding: 0, 0, 0, 0;
+  background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494139752/dougdmm_gdxjru.jpg) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
 
+.picture-gibbit {
+  padding: 0, 0, 0, 0;
+  background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494140993/gibbithomepage_o7vyv3.png) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
 
+.picture-studio {
+  padding: 0, 0, 0, 0;
+  background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494149170/studoindexpage_vstefa.png) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
 
+.picture-presentation {
+  padding: 0, 0, 0, 0;
+  background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494139753/gibbitpitch_nvtzoq.jpg) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
 
+.picture-tokyodev {
+  padding: 0, 0, 0, 0;
+  background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494345206/tokyodev_sminfa.jpg
+) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
 
-
-
-
-
-
-
-
+@media only screen and (max-width: 533px) {
+     h1 { font-size: 45px !important; }
+     h2 { font-size: 22px !important; }
+     h3 { font-size: 20px !important; }
+     h4 { font-size: 18px !important; }
+     h5 { font-size: 16px !important; }
+     p { font-size: 16px !important; }
+   }
 
 
 
