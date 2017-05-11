@@ -4,7 +4,8 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: $gray;
+  transition-duration: 2s;
+  color: $hover-gray;
 }
 
 .banner {
@@ -23,12 +24,27 @@ a:hover {
   // url('http://res.cloudinary.com/dmbf29/image/upload/v1492588671/shibuya_mqo0go.jpg');
   // background-attachment: fixed;
 }
+.banner-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner-name-doug {
+  position: relative;
+}
 
 .banner-name h1 {
   font-size: 100px;
   margin-top: 0px;
+  margin-bottom: 0px;
   font-family: "Caveat";
-  // padding: 50px;
+}
+
+.banner-name-ribbon {
+  // position: absolute;
+  width: 230px;
+  bottom: 0px;
 }
 
 .banner-title {
@@ -44,6 +60,19 @@ a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.banner-icon:hover {
+  transition-duration: 0.5s;
+  color: $yellow;
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+}
+
+.banner-icon a:hover {
+  transition-duration: 1s;
+  color: $yellow;
 }
 
 .banner-icons h5 {
@@ -86,6 +115,7 @@ a:hover {
   padding: 20px;
   height: 500px;
 }
+
 .skill-card {
   text-align: left;
   padding: 20px;
@@ -117,6 +147,13 @@ a:hover {
   margin-bottom: 0px;
 }
 
+.check-out-button {
+  background-color: transparent;
+  border-radius: 2px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
 
 .picture-impact {
   padding: 0, 0, 0, 0;
@@ -141,10 +178,27 @@ a:hover {
   background-position: center;
   height: 500px;
 }
+.picture-gibbit:hover {
+  transition-duration: 2s;
+  padding: 0, 0, 0, 0;
+  background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494476921/gibbitdashboard.png) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
 
 .picture-studio {
   padding: 0, 0, 0, 0;
   background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494149170/studoindexpage_vstefa.png) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.picture-studio:hover {
+  transition-duration: 2s;
+  padding: 0, 0, 0, 0;
+  background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494476922/studioshowpage.png) top left no-repeat;
   background-size: cover;
   background-position: center;
   height: 500px;

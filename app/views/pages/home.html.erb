@@ -1,6 +1,9 @@
 <div class="banner">
   <div class="banner-name">
-    <h1>Douglas Berkley</h1>
+    <div class="banner-name-doug">
+      <h1 id="doug-berkley-name">Douglas Berkley</h1>
+    <%= cl_image_tag("underline_isxch2.png", class: "banner-name-ribbon") %>
+    </div>
   </div>
   <div class="banner-title">
     <h3>Full Stack Web Developer</h3>
@@ -81,7 +84,6 @@
 <div class="row no-gutters gibbit-background">
   <div class="card-background">
     <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-      <%= link_to "http://www.gibbit.online", target: "_blank" do %>
       <div class="project-card">
         <div class="card-title">
           <h3>Gibbit</h3>
@@ -93,8 +95,10 @@
             <p> I was personally responsible with the design and functionality of the user and admin dashboards. I was also in charge of the UX and layout of the home page and chatroom, along with implementing Stripe to pay for service.
           </p>
         </div>
+        <div class="card-link">
+          <%= link_to "Check It Out", "http://www.gibbit.online", target: "_blank", class: "check-out-button" %>
+        </div>
       </div>
-      <% end %>
     </div>
   </div>
   <div class="col-xs-12 col-sm-6" style="padding: 0px;">
@@ -113,7 +117,6 @@
   </div>
   <div class="card-background">
     <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-      <%= link_to "https://studio-fifty-find.herokuapp.com/", target: "_blank" do %>
       <div class="project-card">
         <div class="card-title">
           <h3>Studio Fifty-Find</h3>
@@ -125,8 +128,10 @@
           <p> I created the back-end CRUD methods to book studios and designed the studio booking pages. I also implemented the Google Maps Geocoding API along with mailer confirmations.
           </p>
         </div>
+        <div class="card-link">
+          <%= link_to "Check It Out", "https://studio-fifty-find.herokuapp.com/", target: "_blank", class: "check-out-button" %>
+        </div>
       </div>
-      <% end %>
     </div>
   </div>
 </div>
