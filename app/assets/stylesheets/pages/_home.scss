@@ -131,7 +131,7 @@ a:hover {
 //
 
 .project-card h4 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: lighter;
   line-height: 1.2;
 }
@@ -140,7 +140,9 @@ a:hover {
   line-height: 37px;
   font-weight: lighter;
   font-size: 16px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
 }
 
 .card-content p {
@@ -154,6 +156,10 @@ a:hover {
   border: 1px solid white;
 }
 
+.check-out-button:hover {
+  transition-duration: 2s;
+  border: 1px solid $hover-gray;
+}
 
 .picture-impact {
   padding: 0, 0, 0, 0;
