@@ -96,6 +96,9 @@ a:hover {
 .gibbit-background {
   background-color: $seafoam;
 }
+.dave-background {
+  background-color: $orange;
+}
 .studio-background {
   background-color: $sky;
 }
@@ -192,7 +195,22 @@ a:hover {
   background-position: center;
   height: 500px;
 }
+.picture-dave {
+  padding: 0, 0, 0, 0;
+  background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494808007/davebeckmusic_ivphkl.png) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
 
+.picture-dave:hover {
+  transition-duration: 2s;
+  padding: 0, 0, 0, 0;
+  background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494808006/davebeckshows_qtioy7.png) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
 .picture-studio {
   padding: 0, 0, 0, 0;
   background: url(http://res.cloudinary.com/dmbf29/image/upload/v1494149170/studoindexpage_vstefa.png) top left no-repeat;
