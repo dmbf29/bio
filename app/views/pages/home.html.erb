@@ -2,65 +2,60 @@
   <div class="banner-name">
     <div class="banner-name-doug">
       <h1 id="doug-berkley-name">Douglas Berkley</h1>
-    <%= cl_image_tag("underline_isxch2.png", class: "banner-name-ribbon") %>
     </div>
-  </div>
-  <div class="banner-title">
-    <h3>Full Stack Web Developer</h3>
-    <h5>Tokyo, Japan</h5>
+    <div class="banner-title">
+      <p>Full Stack Web Developer</p>
+      <div class="banner-title-sub">
+        <p>Tokyo, Japan</p>
+      </div>
+    </div>
   </div>
   <div class="banner-icons">
     <div class="banner-icon">
-      <%= mail_to "douglasmberkley@gmail.com" do %>
+      <%= link_to "#apps" do %>
         <div class="banner-icon-pic">
-          <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+          <%= image_tag "apps.png", class: "banner-pic", style: "width:30px;" %>
         </div>
         <div class="banner-icon-tile">
-          <h5>Email</h5>
+          <p>APPS</p>
         </div>
       <% end %>
     </div>
     <div class="banner-icon">
-      <div class="banner-icon-pic">
-        <%= link_to asset_path("Douglas_Berkley_Resume.pdf"), target: "_blank" do %>
-          <p><i class="fa fa-file-text-o" aria-hidden="true"></i></p>
+      <%= link_to "#extensions" do %>
+        <div class="banner-icon-pic">
+          <%= image_tag "extensions.png", class: "banner-pic" %>
         </div>
         <div class="banner-icon-tile">
-          <h5>Resume</h5>
+          <p>EXTENSIONS</p>
         </div>
       <% end %>
     </div>
     <div class="banner-icon">
-      <%= link_to "https://www.linkedin.com/in/dougberkley/", target: "_blank" do %>
+      <%= link_to "#projects" do %>
         <div class="banner-icon-pic">
-          <p><i class="fa fa-linkedin" aria-hidden="true"></i></p>
+          <%= image_tag "projects.png", class: "banner-pic" %>
         </div>
         <div class="banner-icon-tile">
-          <h5>LinkedIn</h5>
+          <p>PROJECTS</p>
         </div>
       <% end %>
     </div>
     <div class="banner-icon">
-      <%= link_to "https://github.com/dmbf29", target: "_blank" do %>
+      <%= link_to "#videos" do %>
         <div class="banner-icon-pic">
-          <p><i class="fa fa-github" aria-hidden="true"></i></p>
+          <%= image_tag "videos.png", class: "banner-pic" %>
         </div>
         <div class="banner-icon-tile">
-          <h5>Github</h5>
+          <p>VIDEOS</p>
         </div>
       <% end %>
     </div>
   </div>
 </div>
 
-<div class="col-xs-12 col-sm-6">
-
-</div>
-
-<div class="col-xs-12 col-sm-6">
-
-</div>
-
+<div class="col-xs-12 col-sm-6"></div>
+<div class="col-xs-12 col-sm-6"></div>
 <div class="row no-gutters">
   <div class="col-xs-12 col-sm-6" style="padding: 0px;">
     <div class="picture-impact"></div>
@@ -70,133 +65,88 @@
   </div>
 </div>
 
-<div class="projects-title-wrapper">
-  <h2>Projects</h2>
-</div>
+<div id="apps"></div>
+<%= render partial: "pages/section", locals: {
+  section: "easy_label",
+  title: "Easy Label",
+  subtitle: "Shopify app that dynamically creates shipping labels for Japan Post",
+  description: "Easily print Japan Post shipping labels for international customers. Create labels for every available shipping method within seconds.",
+  picture_one: "easylabel.png",
+  picture_two: nil,
+  picture_three: nil,
+  picture_four: nil,
+  link: "https://apps.shopify.com/easy-label-japan-post"
+} %>
 
-<!-- Gibbit Info and Pic -->
-<div class="row no-gutters gibbit-background">
-  <div class="card-background">
-    <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-      <div class="project-card">
-        <div class="card-title">
-          <h3>Gibbit</h3>
-          <h4>Lead developer for an online service that helps foreigners living abroad</h4>
-        </div>
-        <div class="card-content">
-          <p><strong>
-            We created a live-chat service to get assistance asap.</strong></p>
-            <p> I was personally responsible with the design and functionality of the user and admin dashboards. I was also in charge of the UX and layout of the home page and chatroom, along with implementing Stripe to pay for service.
-          </p>
-        </div>
-        <div class="card-link">
-          <%= link_to "Check It Out", "http://www.gibbit.online", target: "_blank", class: "check-out-button" %>
-        </div>
-      </div>
+<%= render partial: "pages/section", locals: {
+  section: "easy_rates",
+  title: "Easy Rates",
+  subtitle: "Shopify app that provides custom shipping rates",
+  description: "Easily display rates for all Japan Post shipping methods at checkout. Offer your customers a variety of shipping methods within seconds.",
+  picture_one: "easyrates.png",
+  picture_two: nil,
+  picture_three: nil,
+  picture_four: nil,
+  link: "https://apps.shopify.com/easy-rates-japan-post"
+} %>
+
+<div id="extensions"></div>
+<%= render partial: "pages/section", locals: {
+  section: "shopify_translator",
+  title: "Shopify Translator",
+  subtitle: "Chrome extension that translates the Shopify dashboard into Japanese",
+  description: "The Shopify admin dashboard does not have locale language options, so I created this extension to help Shopify merchants. With over 300 users, it translates all of the important areas and functions for Japanese merchants.",
+  picture_one: "japanesedashboard.png",
+  picture_two: nil,
+  picture_three: nil,
+  picture_four: nil,
+  link: "https://chrome.google.com/webstore/detail/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AEshopify/aldikfnmmalpelfaokdaiimhpedlghlb?hl=en"
+} %>
+
+<div id="projects"></div>
+<%= render partial: "pages/section", locals: {
+  section: "gibbit",
+  title: "Gibbit",
+  subtitle: "Lead developer for an online service that helps foreigners living abroad",
+  description: "I was personally responsible with the design and functionality of the user and admin dashboards. I was also in charge of the UX and layout of the home page and chatroom, along with implementing Stripe to pay for service.",
+  picture_one: "gibbithomepage.png",
+  picture_two: "gibbitdashboard.png",
+  picture_three: nil,
+  picture_four: nil,
+  link: "http://www.gibbit.online/"
+} %>
+
+<%= render partial: "pages/section", locals: {
+  section: "dave_beck_music",
+  title: "Dave Beck Music",
+  subtitle: "Sole developer for a popular music act based in Seoul, Korea",
+  description: "All multimedia is integrated using jQuery, while the rest of the site is based in Ruby, Rails, HTML, and CSS. I was responsible for the entire design and construciton.",
+  picture_one: "davebeckmusic.png",
+  picture_two: "davebeckshows.png",
+  picture_three: nil,
+  picture_four: nil,
+  link: "https://dave-beck-music.herokuapp.com/"
+} %>
+
+<%= render partial: "pages/section", locals: {
+  section: "studio_fifty_find",
+  title: "Studio Fifty-Find",
+  subtitle: "Co-developer for a music studio booking service in Tokyo",
+  description: "I created the back-end CRUD methods to book studios and designed the studio booking pages. I also implemented the Google Maps Geocoding API along with mailer confirmations.",
+  picture_one: "studioshow.png",
+  picture_two: "studioindexpage.png",
+  picture_three: nil,
+  picture_four: nil,
+  link: nil
+} %>
+
+<div id="videos"></div>
+<div class="row no-gutters">
+  <!-- <div class="col-xs-12"> -->
+  <div class="videos-section">
+    <div class="video-title">
+      <p>Gibbit Pitch Night</p>
     </div>
-  </div>
-  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-    <%= link_to "http://www.gibbit.online", target: "_blank" do %>
-      <div class="picture-gibbit"></div>
-    <% end %>
-  </div>
-</div>
-
-<!-- DAVE BECK and Pic -->
-<div class="row no-gutters dave-background">
-  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-    <%= link_to "https://dave-beck-music.herokuapp.com/", target: "_blank" do %>
-      <div class="picture-dave"></div>
-    <% end %>
-  </div>
-  <div class="card-background">
-    <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-      <div class="project-card">
-        <div class="card-title">
-          <h3>Dave Beck Music</h3>
-          <h4>Sole developer for a popular music act based in Seoul</h4>
-        </div>
-        <div class="card-content">
-          <p><strong>
-            This web app was created so that the client could add photos, posts, and concerts without touching code.</strong> </p>
-          <p> All multimedia is integrated using jQuery, while the rest of the site is based in Ruby, Rails, HTML, and CSS. I was responsible for the entire design and construciton.
-          </p>
-        </div>
-        <div class="card-link">
-          <%= link_to "Check It Out", "https://dave-beck-music.herokuapp.com/", target: "_blank", class: "check-out-button" %>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Studio Fifty-Find and Pic -->
-<div class="row no-gutters studio-background">
-  <div class="card-background">
-    <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-      <div class="project-card">
-        <div class="card-title">
-          <h3>Studio Fifty-Find</h3>
-          <h4>Co-developer for a music studio booking service in Tokyo</h4>
-        </div>
-        <div class="card-content">
-          <p><strong>
-            This was a one week market-place project sprint.</strong> </p>
-          <p> I created the back-end CRUD methods to book studios and designed the studio booking pages. I also implemented the Google Maps Geocoding API along with mailer confirmations.
-          </p>
-        </div>
-        <div class="card-link">
-          <%= link_to "Check It Out", "https://studio-fifty-find.herokuapp.com/", target: "_blank", class: "check-out-button" %>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-    <%= link_to "https://studio-fifty-find.herokuapp.com/", target: "_blank" do %>
-      <div class="picture-studio"></div>
-    <% end %>
-  </div>
-</div>
-
-<div class="projects-title-wrapper">
-  <h2>Gibbit Pitch</h2>
-</div>
-
-<!-- Pitch Video and Pic -->
-<div class="row no-gutters title-background">
-  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/QMDunGmWEAw?start=1661" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-    <div class="picture-presentation"></div>
-  </div>
-</div>
-
-
-<div class="projects-title-wrapper">
-  <h2>Skills</h2>
-</div>
-<!-- Skills List and Pic -->
-<div class="row no-gutters skill-background">
-  <div class="card-background">
-    <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-      <div class="skill-card">
-        <ul>
-          <li><p>Object-Oriented Programming</p></li>
-          <li><p>Web Design</p></li>
-          <li><p>Online Transactions</p></li>
-          <li><p>UX & UI Design</p></li>
-          <li><p>Cross-Browser Capability</p></li>
-          <li><p>Hosting & Maintenance</p></li>
-          <li><p>Site Troubleshooting</p></li>
-          <li><p>Database Schema</p></li>
-          <li><p>Mockup Building</p></li>
-          <li><p>APIs and Scraping</p></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-12 col-sm-6" style="padding: 0px;">
-    <div class="picture-tokyodev"></div>
+      <center><iframe width="80%" height="300px" src="https://www.youtube.com/embed/QMDunGmWEAw?start=1661" frameborder="0" allowfullscreen></iframe></center>
   </div>
 </div>

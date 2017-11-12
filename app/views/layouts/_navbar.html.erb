@@ -1,0 +1,26 @@
+<div class="navbar">
+  <!-- Logo -->
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "db.png" %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-line">
+    <%= mail_to "douglasmberkley@gmail.com", class: "navbar-item navbar-link" do %>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i></p>
+    <% end %>
+
+    <%= link_to "https://www.linkedin.com/in/dougberkley/", target: "_blank", class: "navbar-item navbar-link" do %>
+      <p><i class="fa fa-linkedin" aria-hidden="true"></i></p>
+    <% end %>
+
+    <%= link_to "https://github.com/dmbf29", target: "_blank", class: "navbar-item navbar-link" do %>
+      <p><i class="fa fa-github" aria-hidden="true"></i></p>
+    <% end %>
+
+    <%= link_to asset_path("Douglas_Berkley_Resume.pdf"), target: "_blank", class: "navbar-item navbar-link" do %>
+        <p><i class="fa fa-file-text" aria-hidden="true"></i></p>
+    <% end %>
+  </div>
+</div>
+
