@@ -65,8 +65,8 @@
   </div>
 </div>
 
-<div id="apps"></div>
 <%= render partial: "pages/section", locals: {
+  section_id: "apps",
   section: "advanced_cod",
   title: "Advanced Cash on Delivery",
   subtitle: "Shopify app that add customizable cash on delivery shipping methods",
@@ -79,6 +79,7 @@
 } %>
 
 <%= render partial: "pages/section", locals: {
+  section_id: nil,
   section: "easy_label",
   title: "Easy Label",
   subtitle: "Shopify app that dynamically creates shipping labels for Japan Post",
@@ -92,6 +93,7 @@
 
 
 <%= render partial: "pages/section", locals: {
+  section_id: nil,
   section: "easy_rates",
   title: "Easy Rates",
   subtitle: "Shopify app that provides custom shipping rates",
@@ -103,8 +105,8 @@
   link: "https://apps.shopify.com/easy-rates-japan-post"
 } %>
 
-<div id="extensions"></div>
 <%= render partial: "pages/section", locals: {
+  section_id: "extensions",
   section: "shopify_translator",
   title: "Shopify Translator",
   subtitle: "Chrome extension that translates the Shopify dashboard into Japanese",
@@ -116,8 +118,9 @@
   link: "https://chrome.google.com/webstore/detail/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AEshopify/aldikfnmmalpelfaokdaiimhpedlghlb?hl=en"
 } %>
 
-<div id="projects"></div>
+
 <%= render partial: "pages/section", locals: {
+  section_id: "projects",
   section: "gibbit",
   title: "Gibbit",
   subtitle: "Lead developer for an online service that helps foreigners living abroad",
@@ -130,6 +133,7 @@
 } %>
 
 <%= render partial: "pages/section", locals: {
+  section_id: nil,
   section: "dave_beck_music",
   title: "Dave Beck Music",
   subtitle: "Sole developer for a popular music act based in Seoul, Korea",
@@ -142,6 +146,7 @@
 } %>
 
 <%= render partial: "pages/section", locals: {
+  section_id: nil,
   section: "studio_fifty_find",
   title: "Studio Fifty-Find",
   subtitle: "Co-developer for a music studio booking service in Tokyo",
@@ -153,14 +158,11 @@
   link: nil
 } %>
 
-<div id="videos">
-<!-- <div class=""> -->
-  <div class="col-xs-12 videos-section">
-    <div class="">
-      <div class="video-title">
-        <p>Gibbit Pitch Night</p>
-      </div>
-        <center><iframe src="https://www.youtube.com/embed/QMDunGmWEAw?start=1661" frameborder="0" allowfullscreen></iframe></center>
+<div class="col-xs-12 videos-section" id="videos">
+  <div class="">
+    <div class="video-title">
+      <p>Gibbit Pitch Night</p>
     </div>
+      <center><iframe src="https://www.youtube.com/embed/QMDunGmWEAw?start=1661" frameborder="0" allowfullscreen></iframe></center>
   </div>
 </div>
