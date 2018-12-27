@@ -71,4 +71,8 @@
   background-color: $pastel-blue;
 }
 
-
+@media only screen and (max-width : 576px) {
+  .project-info-title {
+    font-size: 2em;
+  }
+}

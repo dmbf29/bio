@@ -1,24 +1,23 @@
-<div class="col-xs-12 col-sm-6 <%= section %> project-section">
-  <div class="">
-  <!-- <div class="col-xs-12"> -->
-      <div class="project-info">
-        <div class="project-info-title">
-          <p><%= title %></p>
-        </div>
-        <div class="project-info-subtitle">
-          <p><%= subtitle %></p>
-        </div>
-        <div class="project-info-desc">
-          <p><%= description %></p>
-        </div>
-        <% if link %>
-          <div class="card-link">
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i> <%= link_to "Check It Out", link, target: "_blank", class: "check-out-button" %>
-          </div>
-        <% end %>
+<div class="col-xs-12 <%= section %> project-section">
+  <div class="col-xs-12 col-sm-6 ">
+    <div class="project-info">
+      <div class="project-info-title">
+        <p><%= title %></p>
       </div>
+      <div class="project-info-subtitle">
+        <p><%= subtitle %></p>
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="project-info-desc">
+        <p><%= description %></p>
+      </div>
+      <% if link %>
+        <div class="card-link">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i> <%= link_to "Check It Out", link, target: "_blank", class: "check-out-button" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+    <div class="col-xs-12 col-sm-6">
       <div class="project-photos">
         <div id="<%= section %>" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->

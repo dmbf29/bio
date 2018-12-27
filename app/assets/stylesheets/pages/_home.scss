@@ -247,6 +247,11 @@ a:hover {
   height: 500px;
 }
 
+iframe {
+  width: 80%;
+  min-height: 300px;
+}
+
 @media only screen and (min-width : 576px) {
   .project-info {
     padding: 0 10px 0 70px;
@@ -300,6 +305,9 @@ a:hover {
   }
   .videos-section {
     padding: 50px 0px 70px 0px;
+  }
+  iframe {
+    width: 100%;
   }
 }
 
