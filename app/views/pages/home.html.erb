@@ -118,9 +118,22 @@
   link: "https://chrome.google.com/webstore/detail/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AEshopify/aldikfnmmalpelfaokdaiimhpedlghlb?hl=en"
 } %>
 
-
 <%= render partial: "pages/section", locals: {
   section_id: "projects",
+  section: "world_cup",
+  title: "World Cup Predict",
+  subtitle: "Interactive layout to predict the 2018 World Cup results",
+  description: "I built the front-end in React. The back-end is handled by a Ruby on Rails API.",
+  picture_one: "gibbithomepage.png",
+  picture_two: "gibbitdashboard.png",
+  picture_three: nil,
+  picture_four: nil,
+  link: "http://www.worldcuppredict.win"
+} %>
+
+
+<%= render partial: "pages/section", locals: {
+  section_id: nil,
   section: "gibbit",
   title: "Gibbit",
   subtitle: "Lead developer for an online service that helps foreigners living abroad",
